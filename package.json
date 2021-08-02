@@ -8,6 +8,7 @@
   "author": "Oliver Smit <github.com/olmesm>",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/secret-manager": "*",
     "micro": "*"
   }
 }
