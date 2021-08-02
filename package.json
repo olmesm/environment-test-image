@@ -1,0 +1,13 @@
+{
+  "name": "environment-test-image",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro"
+  },
+  "author": "Oliver Smit <github.com/olmesm>",
+  "license": "ISC",
+  "dependencies": {
+    "micro": "*"
+  }
+}
