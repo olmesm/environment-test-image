@@ -3,11 +3,12 @@ const client = new SecretManagerServiceClient();
 const { GCP_TEST_SECRET_MESSAGE, TEST_MESSAGE } = process.env;
 
 module.exports = async () => {
+  console.log(">>", { TEST_MESSAGE: process.env.TEST_MESSAGE });
+
   try {
     const [accessResponse] = await client.accessSecretVersion({
       name: GCP_TEST_SECRET_MESSAGE,
     });
-
     return {
       TEST_MESSAGE: TEST_MESSAGE || "TEST_MESSAGE env var is not defined",
       GCP_TEST_SECRET_MESSAGE: accessResponse.payload.data.toString("utf8"),
