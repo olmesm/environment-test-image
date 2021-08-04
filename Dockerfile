@@ -1,10 +1,8 @@
-FROM amd64/node:alpine
+FROM amd6/node:alpine
 
 EXPOSE 3000
 
 WORKDIR /usr/app
 COPY . .
 
-# RUN ["npm", "install"]
-
-CMD ["npx", "micro"]
+CMD ["sh", "run.sh"]
