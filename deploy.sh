@@ -11,7 +11,7 @@ git commit -m "${COMMIT_MESSAGE}"
 git push origin main
 
 echo ">> docker building and tagging as ${IMAGE_NAME}"
-docker build -t ${IMAGE_NAME}
+docker build -t ${IMAGE_NAME} .
 
 echo ">> docker pushing image: ${IMAGE_NAME}"
 docker push ${IMAGE_NAME}
