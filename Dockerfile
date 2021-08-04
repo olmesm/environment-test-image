@@ -1,4 +1,4 @@
-FROM amd6/node:alpine
+FROM amd64/node:alpine
 
 EXPOSE 3000
 
